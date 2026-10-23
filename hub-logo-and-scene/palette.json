@@ -1,0 +1,66 @@
+{
+  "name": "llc-violet-dusk",
+  "size": [
+    320,
+    180
+  ],
+  "colors": [
+    {
+      "name": "void",
+      "hex": "#0d0a1a"
+    },
+    {
+      "name": "n1",
+      "hex": "#150f33"
+    },
+    {
+      "name": "r0",
+      "hex": "#1a1245"
+    },
+    {
+      "name": "r1",
+      "hex": "#2f1c6b"
+    },
+    {
+      "name": "r2",
+      "hex": "#4d2a96"
+    },
+    {
+      "name": "r3",
+      "hex": "#7439b5"
+    },
+    {
+      "name": "r4",
+      "hex": "#a257c9"
+    },
+    {
+      "name": "r5",
+      "hex": "#d083da"
+    },
+    {
+      "name": "r6",
+      "hex": "#f5c4ec"
+    },
+    {
+      "name": "spec",
+      "hex": "#fff1fb"
+    }
+  ],
+  "ramp": {
+    "description": "7-step hue-shifted purple ramp, cool indigo shadow -> warm pink-lavender light; light from top-left",
+    "steps": [
+      "#1a1245",
+      "#2f1c6b",
+      "#4d2a96",
+      "#7439b5",
+      "#a257c9",
+      "#d083da",
+      "#f5c4ec"
+    ],
+    "specular": "#fff1fb"
+  },
+  "night_extension": [
+    "#0d0a1a",
+    "#150f33"
+  ]
+}

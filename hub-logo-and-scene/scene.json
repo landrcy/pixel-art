@@ -1,0 +1,94 @@
+{
+  "size": [
+    320,
+    180
+  ],
+  "scale_note": "integer scale only (1x,2x,3x,4x...) with image-rendering:pixelated",
+  "layers": [
+    {
+      "file": "layer-0-sky.png",
+      "z": 0,
+      "opaque": true,
+      "tileable_x": false,
+      "suggested_drift_px_per_s": 0
+    },
+    {
+      "file": "layer-1-stars.png",
+      "z": 1,
+      "opaque": false,
+      "tileable_x": true,
+      "suggested_drift_px_per_s": 1
+    },
+    {
+      "file": "layer-2-moon.png",
+      "z": 2,
+      "opaque": false,
+      "tileable_x": false,
+      "suggested_drift_px_per_s": 0
+    },
+    {
+      "file": "layer-3-far.png",
+      "z": 3,
+      "opaque": false,
+      "tileable_x": true,
+      "suggested_drift_px_per_s": 3
+    },
+    {
+      "file": "layer-4-mid.png",
+      "z": 4,
+      "opaque": false,
+      "tileable_x": true,
+      "suggested_drift_px_per_s": 7
+    },
+    {
+      "file": "layer-5-frame.png",
+      "z": 5,
+      "opaque": false,
+      "tileable_x": false,
+      "suggested_drift_px_per_s": 0
+    }
+  ],
+  "sparkle": {
+    "file": "sparkle-sheet.png",
+    "frame_size": [
+      15,
+      15
+    ],
+    "frames": 6,
+    "sheet_size": [
+      90,
+      15
+    ],
+    "suggested_css": "animation: tw 0.8s steps(6) infinite; @keyframes tw { to { background-position-x: -90px } }",
+    "anchors_center_px": [
+      [
+        34,
+        30
+      ],
+      [
+        92,
+        18
+      ],
+      [
+        132,
+        60
+      ],
+      [
+        190,
+        24
+      ],
+      [
+        290,
+        70
+      ],
+      [
+        62,
+        84
+      ],
+      [
+        210,
+        96
+      ]
+    ]
+  }
+}
