@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TBOIQ pixel kit demo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="palette.css">
+<style>
+ body{margin:0;padding:24px;font:13px/1.4 ui-monospace,Menlo,Consolas,monospace;background:var(--tb-void);color:var(--tb-cream)}
+ h1{font-size:16px;color:var(--tb-torch);margin:0 0 4px} h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--tb-torch);margin:28px 0 10px;border-bottom:2px solid var(--tb-violet-deep);padding-bottom:4px}
+ .grid{display:flex;flex-wrap:wrap;gap:10px}
+ .cell{background:var(--tb-night);border:2px solid var(--tb-violet-deep);padding:8px;text-align:center;min-width:104px}
+ .cell small{display:block;margin-top:6px;color:var(--tb-bone);font-size:11px}
+ .cell canvas{display:block;margin:0 auto}
+ .bar{display:flex;gap:8px;background:var(--tb-night);padding:8px;border:2px solid var(--tb-violet-deep);width:max-content}
+ .pal{display:flex;flex-wrap:wrap;gap:4px}.pal i{display:block;width:44px;height:44px;font:9px/1 monospace;color:#000;padding:3px;box-sizing:border-box;font-style:normal}
+ .tb-icon-btn{display:block;line-height:0}
+ .row{display:flex;gap:10px;align-items:center;margin-top:10px}
+</style></head><body>
+<h1>TBOIQ original pixel kit</h1><div style="color:var(--tb-bone)">Hand-authored grids - nearest-neighbour canvas rendering. Hover the UI buttons.</div>
+<h2>Palette (24)</h2><div class="pal" id="pal"></div>
+<h2>UI bar (icon-only, normal/hover)</h2><div class="bar" id="bar"></div>
+<div class="row"><span>mute toggle:</span><button class="tb-icon-btn" id="mute" aria-pressed="false" title="sound"></button><span id="mutelbl" style="color:var(--tb-bone)">sound on</span></div>
+<div id="sections"></div>
+<script src="icons.js"></script>
+<script>
+const {PALETTE, ICONS, CATEGORIES, drawIcon} = TBOIQ;
+const SC = 6;
+function cv(name, sc){ const s = ICONS[name]; const c = document.createElement('canvas'); c.width = s[0].length*sc; c.height = s.length*sc; c.className='tb-px'; drawIcon(c.getContext('2d'), s, 0, 0, sc); return c; }
+const pal = document.getElementById('pal');
+for (const k in PALETTE){ const i = document.createElement('i'); i.style.background = PALETTE[k]; i.textContent = k; i.title = PALETTE[k]; pal.appendChild(i); }
+function iconButton(base, sc, title){
+  const b = document.createElement('button'); b.className = 'tb-icon-btn'; b.title = title || base; b.setAttribute('aria-label', title || base);
+  const n = cv('ui_'+base, sc), h = cv('ui_'+base+'_hover', sc); h.style.display = 'none'; b.append(n, h);
+  const on = () => { n.style.display='none'; h.style.display='block'; }, off = () => { n.style.display='block'; h.style.display='none'; };
+  b.onmouseenter = b.onfocus = on; b.onmouseleave = b.onblur = off; return b;
+}
+const bar = document.getElementById('bar');
+['home','item','character','sound_on','how_to_play','back','share'].forEach(n => bar.appendChild(iconButton(n, 3)));
+const mute = document.getElementById('mute'); let muted = false;
+function renderMute(){ mute.replaceChildren(cv(muted ? 'ui_sound_off' : 'ui_sound_on', 3)); document.getElementById('mutelbl').textContent = muted ? 'muted' : 'sound on'; mute.setAttribute('aria-pressed', muted); }
+mute.onclick = () => { muted = !muted; renderMute(); }; renderMute();
+const titles = {passive:'Passive items', active:'Active items', trinket:'Trinkets', familiar:'Familiars', character:'Characters (24x24)', ui:'UI icons - normal and hover'};
+const root = document.getElementById('sections');
+for (const cat in CATEGORIES){
+  const h = document.createElement('h2'); h.textContent = titles[cat] || cat; root.appendChild(h);
+  const g = document.createElement('div'); g.className = 'grid'; root.appendChild(g);
+  CATEGORIES[cat].forEach(n => { const d = document.createElement('div'); d.className = 'cell'; d.appendChild(cv(n, cat==='character'? SC+2 : SC+2)); const s = document.createElement('small'); s.textContent = n.replace(/^ui_/,'').replace(/_/g,' '); d.appendChild(s); g.appendChild(d); });
+}
+</script></body></html>

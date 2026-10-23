@@ -1,0 +1,62 @@
+heart_jar              colors=13 semi_alpha=0 off_palette=0 same-colour-orphans=16
+tooth_charm            colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=2
+gilded_crown           colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=6
+eye_amulet             colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=22
+sick_mushroom          colors= 8 semi_alpha=0 off_palette=0 same-colour-orphans=6
+blood_chalice          colors= 8 semi_alpha=0 off_palette=0 same-colour-orphans=17
+raven_feather          colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=12
+candle                 colors= 9 semi_alpha=0 off_palette=0 same-colour-orphans=13
+potion_flask           colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=12
+hourglass              colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=12
+lantern                colors= 8 semi_alpha=0 off_palette=0 same-colour-orphans=4
+ritual_dagger          colors=10 semi_alpha=0 off_palette=0 same-colour-orphans=8
+toll_bell              colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=6
+spellbook              colors= 8 semi_alpha=0 off_palette=0 same-colour-orphans=2
+scrying_orb            colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=18
+rusty_coin             colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=7
+bone_key               colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=6
+gem_ring               colors= 7 semi_alpha=0 off_palette=0 same-colour-orphans=10
+iron_padlock           colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=3
+rusty_nail             colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=2
+bone_button            colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=9
+knuckle_die            colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=2
+dead_clover            colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=12
+tiny_skull             colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=4
+wandering_eye          colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=18
+cave_bat               colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=6
+crypt_spider           colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=10
+sheet_ghost            colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=9
+bile_slime             colors= 7 semi_alpha=0 off_palette=0 same-colour-orphans=8
+grave_fly              colors= 9 semi_alpha=0 off_palette=0 same-colour-orphans=9
+horned_imp             colors=10 semi_alpha=0 off_palette=0 same-colour-orphans=14
+thorn_rose             colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=23
+hooded_pilgrim         colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=7
+horned_knight          colors= 9 semi_alpha=0 off_palette=0 same-colour-orphans=9
+moss_witch             colors=11 semi_alpha=0 off_palette=0 same-colour-orphans=20
+plague_physician       colors=12 semi_alpha=0 off_palette=0 same-colour-orphans=17
+bone_jester            colors=14 semi_alpha=0 off_palette=0 same-colour-orphans=16
+crowned_wraith         colors=10 semi_alpha=0 off_palette=0 same-colour-orphans=10
+shroom_hermit          colors=14 semi_alpha=0 off_palette=0 same-colour-orphans=19
+cat_cutpurse           colors=10 semi_alpha=0 off_palette=0 same-colour-orphans=5
+ui_home                colors= 6 semi_alpha=0 off_palette=0 same-colour-orphans=22
+ui_home_hover          colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=21
+ui_item                colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=36
+ui_item_hover          colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=36
+ui_character           colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=16
+ui_character_hover     colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=16
+ui_sound_on            colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=18
+ui_sound_on_hover      colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=18
+ui_sound_off           colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=14
+ui_sound_off_hover     colors= 5 semi_alpha=0 off_palette=0 same-colour-orphans=14
+ui_how_to_play         colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=11
+ui_how_to_play_hover   colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=11
+ui_back                colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=22
+ui_back_hover          colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=22
+ui_share               colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=18
+ui_share_hover         colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=18
+ui_correct             colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=34
+ui_correct_hover       colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=34
+ui_wrong               colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=69
+ui_wrong_hover         colors= 4 semi_alpha=0 off_palette=0 same-colour-orphans=69
+ui_close               colors= 3 semi_alpha=0 off_palette=0 same-colour-orphans=49
+ui_close_hover         colors= 3 semi_alpha=0 off_palette=0 same-colour-orphans=49

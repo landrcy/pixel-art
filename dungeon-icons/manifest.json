@@ -1,0 +1,989 @@
+{
+  "name": "TBOIQ original pixel kit",
+  "palette": "palette.json",
+  "script": "icons.js",
+  "counts": {
+    "passive": 8,
+    "active": 8,
+    "trinket": 8,
+    "familiar": 8,
+    "character": 8,
+    "ui": 22
+  },
+  "icons": [
+    {
+      "name": "heart_jar",
+      "label": "heart jar",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/heart_jar.png",
+      "png_x2": "items/passive/heart_jar_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tooth_charm",
+      "label": "tooth charm",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/tooth_charm.png",
+      "png_x2": "items/passive/tooth_charm_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "gilded_crown",
+      "label": "gilded crown",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/gilded_crown.png",
+      "png_x2": "items/passive/gilded_crown_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "eye_amulet",
+      "label": "eye amulet",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/eye_amulet.png",
+      "png_x2": "items/passive/eye_amulet_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "sick_mushroom",
+      "label": "sick mushroom",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/sick_mushroom.png",
+      "png_x2": "items/passive/sick_mushroom_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "blood_chalice",
+      "label": "blood chalice",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/blood_chalice.png",
+      "png_x2": "items/passive/blood_chalice_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "raven_feather",
+      "label": "raven feather",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/raven_feather.png",
+      "png_x2": "items/passive/raven_feather_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "candle",
+      "label": "candle",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/candle.png",
+      "png_x2": "items/active/candle_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "potion_flask",
+      "label": "potion flask",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/potion_flask.png",
+      "png_x2": "items/active/potion_flask_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "hourglass",
+      "label": "hourglass",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/hourglass.png",
+      "png_x2": "items/active/hourglass_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "lantern",
+      "label": "lantern",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/lantern.png",
+      "png_x2": "items/active/lantern_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "ritual_dagger",
+      "label": "ritual dagger",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/ritual_dagger.png",
+      "png_x2": "items/active/ritual_dagger_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "toll_bell",
+      "label": "toll bell",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/toll_bell.png",
+      "png_x2": "items/active/toll_bell_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "spellbook",
+      "label": "spellbook",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/spellbook.png",
+      "png_x2": "items/active/spellbook_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "scrying_orb",
+      "label": "scrying orb",
+      "category": "active",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/active/scrying_orb.png",
+      "png_x2": "items/active/scrying_orb_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "rusty_coin",
+      "label": "rusty coin",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/rusty_coin.png",
+      "png_x2": "items/trinkets/rusty_coin_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bone_key",
+      "label": "bone key",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/bone_key.png",
+      "png_x2": "items/trinkets/bone_key_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "gem_ring",
+      "label": "gem ring",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/gem_ring.png",
+      "png_x2": "items/trinkets/gem_ring_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "iron_padlock",
+      "label": "iron padlock",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/iron_padlock.png",
+      "png_x2": "items/trinkets/iron_padlock_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "rusty_nail",
+      "label": "rusty nail",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/rusty_nail.png",
+      "png_x2": "items/trinkets/rusty_nail_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bone_button",
+      "label": "bone button",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/bone_button.png",
+      "png_x2": "items/trinkets/bone_button_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "knuckle_die",
+      "label": "knuckle die",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/knuckle_die.png",
+      "png_x2": "items/trinkets/knuckle_die_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "dead_clover",
+      "label": "dead clover",
+      "category": "trinket",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/trinkets/dead_clover.png",
+      "png_x2": "items/trinkets/dead_clover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tiny_skull",
+      "label": "tiny skull",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/tiny_skull.png",
+      "png_x2": "items/familiars/tiny_skull_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wandering_eye",
+      "label": "wandering eye",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/wandering_eye.png",
+      "png_x2": "items/familiars/wandering_eye_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "cave_bat",
+      "label": "cave bat",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/cave_bat.png",
+      "png_x2": "items/familiars/cave_bat_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "crypt_spider",
+      "label": "crypt spider",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/crypt_spider.png",
+      "png_x2": "items/familiars/crypt_spider_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "sheet_ghost",
+      "label": "sheet ghost",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/sheet_ghost.png",
+      "png_x2": "items/familiars/sheet_ghost_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bile_slime",
+      "label": "bile slime",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/bile_slime.png",
+      "png_x2": "items/familiars/bile_slime_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grave_fly",
+      "label": "grave fly",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/grave_fly.png",
+      "png_x2": "items/familiars/grave_fly_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "horned_imp",
+      "label": "horned imp",
+      "category": "familiar",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/familiars/horned_imp.png",
+      "png_x2": "items/familiars/horned_imp_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "thorn_rose",
+      "label": "thorn rose",
+      "category": "passive",
+      "size": [
+        16,
+        16
+      ],
+      "png": "items/passive/thorn_rose.png",
+      "png_x2": "items/passive/thorn_rose_x2.png",
+      "size_x2": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "hooded_pilgrim",
+      "label": "hooded pilgrim",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/hooded_pilgrim.png",
+      "png_x2": "characters/hooded_pilgrim_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "horned_knight",
+      "label": "horned knight",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/horned_knight.png",
+      "png_x2": "characters/horned_knight_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "moss_witch",
+      "label": "moss witch",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/moss_witch.png",
+      "png_x2": "characters/moss_witch_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "plague_physician",
+      "label": "plague physician",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/plague_physician.png",
+      "png_x2": "characters/plague_physician_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "bone_jester",
+      "label": "bone jester",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/bone_jester.png",
+      "png_x2": "characters/bone_jester_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "crowned_wraith",
+      "label": "crowned wraith",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/crowned_wraith.png",
+      "png_x2": "characters/crowned_wraith_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "shroom_hermit",
+      "label": "shroom hermit",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/shroom_hermit.png",
+      "png_x2": "characters/shroom_hermit_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "cat_cutpurse",
+      "label": "cat cutpurse",
+      "category": "character",
+      "size": [
+        24,
+        24
+      ],
+      "png": "characters/cat_cutpurse.png",
+      "png_x2": "characters/cat_cutpurse_x2.png",
+      "size_x2": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ui_home",
+      "label": "home",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/home.png",
+      "png_x2": "ui/home_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "home"
+    },
+    {
+      "name": "ui_home_hover",
+      "label": "home hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/home_hover.png",
+      "png_x2": "ui/home_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "home"
+    },
+    {
+      "name": "ui_item",
+      "label": "item",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/item.png",
+      "png_x2": "ui/item_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "item"
+    },
+    {
+      "name": "ui_item_hover",
+      "label": "item hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/item_hover.png",
+      "png_x2": "ui/item_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "item"
+    },
+    {
+      "name": "ui_character",
+      "label": "character",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/character.png",
+      "png_x2": "ui/character_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "character"
+    },
+    {
+      "name": "ui_character_hover",
+      "label": "character hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/character_hover.png",
+      "png_x2": "ui/character_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "character"
+    },
+    {
+      "name": "ui_sound_on",
+      "label": "sound on",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/sound_on.png",
+      "png_x2": "ui/sound_on_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "sound_on"
+    },
+    {
+      "name": "ui_sound_on_hover",
+      "label": "sound on hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/sound_on_hover.png",
+      "png_x2": "ui/sound_on_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "sound_on"
+    },
+    {
+      "name": "ui_sound_off",
+      "label": "sound off",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/sound_off.png",
+      "png_x2": "ui/sound_off_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "sound_off"
+    },
+    {
+      "name": "ui_sound_off_hover",
+      "label": "sound off hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/sound_off_hover.png",
+      "png_x2": "ui/sound_off_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "sound_off"
+    },
+    {
+      "name": "ui_how_to_play",
+      "label": "how to play",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/how_to_play.png",
+      "png_x2": "ui/how_to_play_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "how_to_play"
+    },
+    {
+      "name": "ui_how_to_play_hover",
+      "label": "how to play hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/how_to_play_hover.png",
+      "png_x2": "ui/how_to_play_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "how_to_play"
+    },
+    {
+      "name": "ui_back",
+      "label": "back",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/back.png",
+      "png_x2": "ui/back_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "back"
+    },
+    {
+      "name": "ui_back_hover",
+      "label": "back hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/back_hover.png",
+      "png_x2": "ui/back_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "back"
+    },
+    {
+      "name": "ui_share",
+      "label": "share",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/share.png",
+      "png_x2": "ui/share_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "share"
+    },
+    {
+      "name": "ui_share_hover",
+      "label": "share hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/share_hover.png",
+      "png_x2": "ui/share_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "share"
+    },
+    {
+      "name": "ui_correct",
+      "label": "correct",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/correct.png",
+      "png_x2": "ui/correct_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "correct"
+    },
+    {
+      "name": "ui_correct_hover",
+      "label": "correct hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/correct_hover.png",
+      "png_x2": "ui/correct_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "correct"
+    },
+    {
+      "name": "ui_wrong",
+      "label": "wrong",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/wrong.png",
+      "png_x2": "ui/wrong_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "wrong"
+    },
+    {
+      "name": "ui_wrong_hover",
+      "label": "wrong hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/wrong_hover.png",
+      "png_x2": "ui/wrong_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "wrong"
+    },
+    {
+      "name": "ui_close",
+      "label": "close",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/close.png",
+      "png_x2": "ui/close_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "normal",
+      "base": "close"
+    },
+    {
+      "name": "ui_close_hover",
+      "label": "close hover",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "png": "ui/close_hover.png",
+      "png_x2": "ui/close_hover_x2.png",
+      "size_x2": [
+        32,
+        32
+      ],
+      "state": "hover",
+      "base": "close"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "name": "TBOIQ Dungeon-24",
+  "count": 24,
+  "colors": [
+    {
+      "key": "k",
+      "hex": "#0e0b14",
+      "name": "void black",
+      "role": "outline / page background (tinted, never pure black)",
+      "contrast_on_k": 1.0,
+      "contrast_on_n": 1.06
+    },
+    {
+      "key": "n",
+      "hex": "#17121f",
+      "name": "crypt night",
+      "role": "panel / card background",
+      "contrast_on_k": 1.06,
+      "contrast_on_n": 1.0
+    },
+    {
+      "key": "p",
+      "hex": "#281d3a",
+      "name": "deep violet",
+      "role": "shadow tone for purples, glass interior",
+      "contrast_on_k": 1.23,
+      "contrast_on_n": 1.16
+    },
+    {
+      "key": "P",
+      "hex": "#43305c",
+      "name": "dusk violet",
+      "role": "mid tone purple",
+      "contrast_on_k": 1.69,
+      "contrast_on_n": 1.59
+    },
+    {
+      "key": "u",
+      "hex": "#6e5a9e",
+      "name": "wisp violet",
+      "role": "highlight purple",
+      "contrast_on_k": 3.36,
+      "contrast_on_n": 3.17
+    },
+    {
+      "key": "b",
+      "hex": "#1c2646",
+      "name": "abyss blue",
+      "role": "shadow tone for blues/steel",
+      "contrast_on_k": 1.31,
+      "contrast_on_n": 1.24
+    },
+    {
+      "key": "B",
+      "hex": "#35508c",
+      "name": "iron blue",
+      "role": "mid tone blue/steel",
+      "contrast_on_k": 2.49,
+      "contrast_on_n": 2.34
+    },
+    {
+      "key": "c",
+      "hex": "#74a3c8",
+      "name": "frost blue",
+      "role": "highlight blue/steel, glass glint",
+      "contrast_on_k": 7.26,
+      "contrast_on_n": 6.84
+    },
+    {
+      "key": "r",
+      "hex": "#2c0e1c",
+      "name": "clot",
+      "role": "darkest blood / red outline",
+      "contrast_on_k": 1.1,
+      "contrast_on_n": 1.04
+    },
+    {
+      "key": "R",
+      "hex": "#6a1527",
+      "name": "dried blood",
+      "role": "shadow red",
+      "contrast_on_k": 1.62,
+      "contrast_on_n": 1.53
+    },
+    {
+      "key": "e",
+      "hex": "#a62336",
+      "name": "blood",
+      "role": "mid red",
+      "contrast_on_k": 2.71,
+      "contrast_on_n": 2.55
+    },
+    {
+      "key": "E",
+      "hex": "#e2573f",
+      "name": "fresh blood",
+      "role": "highlight red (hue-shifted to orange)",
+      "contrast_on_k": 5.27,
+      "contrast_on_n": 4.96
+    },
+    {
+      "key": "q",
+      "hex": "#34252f",
+      "name": "grave dust",
+      "role": "bone outline / darkest bone",
+      "contrast_on_k": 1.35,
+      "contrast_on_n": 1.27
+    },
+    {
+      "key": "m",
+      "hex": "#66504f",
+      "name": "old bone",
+      "role": "bone shadow",
+      "contrast_on_k": 2.62,
+      "contrast_on_n": 2.47
+    },
+    {
+      "key": "t",
+      "hex": "#a38c76",
+      "name": "bone",
+      "role": "bone mid",
+      "contrast_on_k": 6.1,
+      "contrast_on_n": 5.75
+    },
+    {
+      "key": "w",
+      "hex": "#d9c8a2",
+      "name": "pale bone",
+      "role": "bone light",
+      "contrast_on_k": 11.83,
+      "contrast_on_n": 11.14
+    },
+    {
+      "key": "W",
+      "hex": "#f5ebcf",
+      "name": "cream",
+      "role": "bone highlight / text",
+      "contrast_on_k": 16.41,
+      "contrast_on_n": 15.46
+    },
+    {
+      "key": "g",
+      "hex": "#17352b",
+      "name": "rot green",
+      "role": "darkest green",
+      "contrast_on_k": 1.47,
+      "contrast_on_n": 1.38
+    },
+    {
+      "key": "G",
+      "hex": "#35653a",
+      "name": "moss",
+      "role": "shadow green",
+      "contrast_on_k": 2.86,
+      "contrast_on_n": 2.69
+    },
+    {
+      "key": "l",
+      "hex": "#78a03a",
+      "name": "sickly green",
+      "role": "mid green",
+      "contrast_on_k": 6.4,
+      "contrast_on_n": 6.03
+    },
+    {
+      "key": "L",
+      "hex": "#bfcd5c",
+      "name": "bile",
+      "role": "highlight green (hue-shifted to yellow)",
+      "contrast_on_k": 11.24,
+      "contrast_on_n": 10.59
+    },
+    {
+      "key": "y",
+      "hex": "#9c4d1c",
+      "name": "ember brown",
+      "role": "torch shadow / rust",
+      "contrast_on_k": 3.24,
+      "contrast_on_n": 3.06
+    },
+    {
+      "key": "Y",
+      "hex": "#e8902a",
+      "name": "torchlight",
+      "role": "warm accent",
+      "contrast_on_k": 7.85,
+      "contrast_on_n": 7.4
+    },
+    {
+      "key": "Z",
+      "hex": "#ffd56b",
+      "name": "flame",
+      "role": "brightest accent / hover",
+      "contrast_on_k": 13.92,
+      "contrast_on_n": 13.11
+    }
+  ],
+  "ramps": {
+    "void/night (tinted near-blacks)": [
+      "k",
+      "n",
+      "p",
+      "P",
+      "u"
+    ],
+    "blood reds": [
+      "r",
+      "R",
+      "e",
+      "E"
+    ],
+    "bone / cream": [
+      "q",
+      "m",
+      "t",
+      "w",
+      "W"
+    ],
+    "sickly greens": [
+      "g",
+      "G",
+      "l",
+      "L"
+    ],
+    "dusk purples": [
+      "p",
+      "P",
+      "u"
+    ],
+    "iron / night blues": [
+      "b",
+      "B",
+      "c"
+    ],
+    "torchlight (warm accent)": [
+      "y",
+      "Y",
+      "Z"
+    ]
+  }
+}
