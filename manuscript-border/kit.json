@@ -1,0 +1,155 @@
+{
+  "name": "llc-illuminated-manuscript-border-kit",
+  "pixel_grid": 1,
+  "scale": "native 1x; scale by integer factors only with image-rendering: pixelated",
+  "light": "top-left",
+  "alpha": "0/255 only",
+  "colors": 14,
+  "palette": "palette.json",
+  "no_motifs": "no vines, no leaves; scrollwork, volutes, lozenges, pearls, medallions only",
+  "css": {
+    "strip_left": ".hero::before{content:'';position:absolute;left:0;top:64px;bottom:64px;width:48px;background:url(vine-strip-left.png) repeat-y 0 0;image-rendering:pixelated}",
+    "strip_right": "same with right:0 and vine-strip-right.png (exact mirror)",
+    "divider_row": "[line-tile repeat-x] + divider-top.png (centred, 160px) + [line-tile repeat-x]; the tile is mirror-symmetric so the same file serves both sides",
+    "glint": ".glint{width:13px;height:13px;background:url(gold-glint-sheet.png) 0 0/78px 13px;image-rendering:pixelated;animation:glint .9s steps(6) infinite}@keyframes glint{to{background-position:-78px 0}}"
+  },
+  "files": [
+    {
+      "file": "vine-strip-left.png",
+      "size": [
+        48,
+        128
+      ],
+      "tile": "vertical (repeat-y), seamless top/bottom",
+      "usage": "left hero edge: background:url() repeat-y left top; start under the TL corner (y=64) and stop above the BL corner. Row 0 is a node apex so it butts cleanly against a corner."
+    },
+    {
+      "file": "vine-strip-right.png",
+      "size": [
+        48,
+        128
+      ],
+      "tile": "vertical (repeat-y)",
+      "usage": "exact horizontal mirror of the left strip; right hero edge, background-position: right top"
+    },
+    {
+      "file": "corner-tl.png",
+      "size": [
+        64,
+        64
+      ],
+      "tile": "no",
+      "usage": "top-left corner flourish; rails (3px, x/y 2-4) run off the right/bottom edge to join strips and divider line tiles"
+    },
+    {
+      "file": "corner-tr.png",
+      "size": [
+        64,
+        64
+      ],
+      "tile": "no",
+      "usage": "exact horizontal mirror of corner-tl"
+    },
+    {
+      "file": "corner-bl.png",
+      "size": [
+        64,
+        64
+      ],
+      "tile": "no",
+      "usage": "exact vertical mirror of corner-tl"
+    },
+    {
+      "file": "corner-br.png",
+      "size": [
+        64,
+        64
+      ],
+      "tile": "no",
+      "usage": "exact 180deg rotation (h+v mirror) of corner-tl"
+    },
+    {
+      "file": "divider-top.png",
+      "size": [
+        160,
+        24
+      ],
+      "tile": "centre piece; extend left/right with divider-line-tile (160 is a multiple of 16)",
+      "usage": "centre under the top rail between the two top corners; hangs from a 3px rail"
+    },
+    {
+      "file": "divider-bottom.png",
+      "size": [
+        160,
+        24
+      ],
+      "tile": "centre piece",
+      "usage": "exact vertical mirror of divider-top, for the bottom edge"
+    },
+    {
+      "file": "divider-line-tile.png",
+      "size": [
+        16,
+        24
+      ],
+      "tile": "horizontal (repeat-x), seamless",
+      "usage": "rail + pearl line; repeat-x either side of the divider ornament (use the same tile both sides, it is mirror-symmetric); flip vertically for the bottom edge"
+    },
+    {
+      "file": "ornament-diamond.png",
+      "size": [
+        16,
+        24
+      ],
+      "tile": "no",
+      "usage": "lozenge gem; bullet/section marker, chain between dividers"
+    },
+    {
+      "file": "ornament-medallion.png",
+      "size": [
+        24,
+        24
+      ],
+      "tile": "no",
+      "usage": "round jewelled medallion; centre-piece above/below the logo"
+    },
+    {
+      "file": "ornament-finial.png",
+      "size": [
+        24,
+        24
+      ],
+      "tile": "no",
+      "usage": "twin-volute scroll finial; top-centre cap or section ending"
+    },
+    {
+      "file": "gold-glint-sheet.png",
+      "size": [
+        78,
+        13
+      ],
+      "tile": "6 frames, 13x13 each, side by side",
+      "usage": "CSS steps(6) animation; position over gold (gems, rails)"
+    },
+    {
+      "file": "preview.png",
+      "size": [
+        320,
+        180
+      ],
+      "tile": "no",
+      "usage": "320x180 composed scene (not for production)"
+    },
+    {
+      "file": "preview@4x.png",
+      "size": [
+        1280,
+        720
+      ],
+      "tile": "no",
+      "usage": "nearest-neighbour 4x of preview.png"
+    }
+  ],
+  "generator": "generate.py",
+  "qa": "python3 lint.py (alpha, palette, isolated pixels, mirrors, tile seams, joins; writes checks/*.png)"
+}

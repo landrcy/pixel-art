@@ -1,0 +1,17 @@
+/* illuminated-manuscript kit palette (purple ramp shared with ../palette.css) */
+:root {
+  --ms-r0: #1a1245;
+  --ms-r1: #2f1c6b;
+  --ms-r2: #4d2a96;
+  --ms-r3: #7439b5;
+  --ms-r4: #a257c9;
+  --ms-r5: #d083da;
+  --ms-r6: #f5c4ec;
+  --ms-spec: #fff1fb;
+  --ms-g0: #3d1f17; /* dark bronze-brown (outline / shade) */
+  --ms-g1: #7c4420; /* bronze (shadow side) */
+  --ms-g2: #b9792a; /* antique gold (body) */
+  --ms-g3: #e8b546; /* warm gold (lit edge) */
+  --ms-g4: #fbe8a0; /* pale gold (highlight) */
+  --ms-glint: #fffbe3; /* specular glint */
+}

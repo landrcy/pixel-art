@@ -1,0 +1,100 @@
+{
+  "name": "llc-manuscript-purple-gold",
+  "colors": [
+    {
+      "name": "r0",
+      "hex": "#1a1245",
+      "group": "purple"
+    },
+    {
+      "name": "r1",
+      "hex": "#2f1c6b",
+      "group": "purple"
+    },
+    {
+      "name": "r2",
+      "hex": "#4d2a96",
+      "group": "purple"
+    },
+    {
+      "name": "r3",
+      "hex": "#7439b5",
+      "group": "purple"
+    },
+    {
+      "name": "r4",
+      "hex": "#a257c9",
+      "group": "purple"
+    },
+    {
+      "name": "r5",
+      "hex": "#d083da",
+      "group": "purple"
+    },
+    {
+      "name": "r6",
+      "hex": "#f5c4ec",
+      "group": "purple"
+    },
+    {
+      "name": "spec",
+      "hex": "#fff1fb",
+      "group": "purple"
+    },
+    {
+      "name": "g0",
+      "hex": "#3d1f17",
+      "group": "gold",
+      "role": "dark bronze-brown (outline / shade)"
+    },
+    {
+      "name": "g1",
+      "hex": "#7c4420",
+      "group": "gold",
+      "role": "bronze (shadow side)"
+    },
+    {
+      "name": "g2",
+      "hex": "#b9792a",
+      "group": "gold",
+      "role": "antique gold (body)"
+    },
+    {
+      "name": "g3",
+      "hex": "#e8b546",
+      "group": "gold",
+      "role": "warm gold (lit edge)"
+    },
+    {
+      "name": "g4",
+      "hex": "#fbe8a0",
+      "group": "gold",
+      "role": "pale gold (highlight)"
+    },
+    {
+      "name": "glint",
+      "hex": "#fffbe3",
+      "group": "gold",
+      "role": "specular glint"
+    }
+  ],
+  "purple_ramp": [
+    "#1a1245",
+    "#2f1c6b",
+    "#4d2a96",
+    "#7439b5",
+    "#a257c9",
+    "#d083da",
+    "#f5c4ec"
+  ],
+  "purple_specular": "#fff1fb",
+  "gold_ramp": [
+    "#3d1f17",
+    "#7c4420",
+    "#b9792a",
+    "#e8b546",
+    "#fbe8a0"
+  ],
+  "gold_specular": "#fffbe3",
+  "notes": "purple ramp identical to ../palette.json (llc-violet-dusk); gold ramp hue-shifts bronze-brown (~10deg) -> pale yellow-gold (~47deg). Light from top-left."
+}
