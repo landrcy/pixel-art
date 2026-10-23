@@ -1,0 +1,635 @@
+{
+ "project": "Sea of Thought",
+ "generator": "generate.py",
+ "style": {
+  "light": "top-left",
+  "shading": "4-tone hue-shifted ramps + darker-tone outline",
+  "alpha": "binary (0/255)",
+  "palette": "Ocean Blue Serenity #03045E #023E8A #0077B6 #0096C7 #00B4D8 #48CAE4 #90E0EF #ADE8F4 #CAF0F8 + creature accents"
+ },
+ "notes": "Each sheet = frames side by side, frame_width x frame_height each. anchor = [x,y] pixel inside a frame. *_glow.png = same layout, only the emissive pixels (use for additive/bloom overlay).",
+ "sprites": [
+  {
+   "name": "angelfish",
+   "category": "fish",
+   "file": "sprites/angelfish.png",
+   "frame_width": 42,
+   "frame_height": 46,
+   "frame_count": 4,
+   "anchor": [
+    21,
+    23
+   ],
+   "facing": "right",
+   "notes": "Tall silver body, trailing dorsal/anal fins, 3 slanted ink bars, gold face. Fin tips flutter. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "clownfish",
+   "category": "fish",
+   "file": "sprites/clownfish.png",
+   "frame_width": 32,
+   "frame_height": 22,
+   "frame_count": 4,
+   "anchor": [
+    16,
+    11
+   ],
+   "facing": "right",
+   "notes": "Orange body, 3 white bands with ink edging. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "tuna",
+   "category": "fish",
+   "file": "sprites/tuna.png",
+   "frame_width": 52,
+   "frame_height": 28,
+   "frame_count": 4,
+   "anchor": [
+    26,
+    14
+   ],
+   "facing": "right",
+   "notes": "Fast open-water swimmer; lunate tail, gold flank stripe, yellow finlets. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "pufferfish",
+   "category": "fish",
+   "file": "sprites/pufferfish.png",
+   "frame_width": 34,
+   "frame_height": 28,
+   "frame_count": 4,
+   "anchor": [
+    17,
+    14
+   ],
+   "facing": "right",
+   "notes": "Relaxed (deflated) puffer, spotted back. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "pufferfish_inflated",
+   "category": "fish",
+   "file": "sprites/pufferfish_inflated.png",
+   "frame_width": 46,
+   "frame_height": 42,
+   "frame_count": 4,
+   "anchor": [
+    23,
+    21
+   ],
+   "facing": "right",
+   "notes": "Inflated puffer with 2px spikes (defence pose). 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "seahorse",
+   "category": "fish",
+   "file": "sprites/seahorse.png",
+   "frame_width": 22,
+   "frame_height": 38,
+   "frame_count": 4,
+   "anchor": [
+    11,
+    19
+   ],
+   "facing": "right (upright)",
+   "notes": "Vertical pose, curled tail sways, dorsal fin ripples. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "jellyfish",
+   "category": "fish",
+   "file": "sprites/jellyfish.png",
+   "frame_width": 30,
+   "frame_height": 40,
+   "frame_count": 4,
+   "anchor": [
+    15,
+    20
+   ],
+   "facing": "right (upright)",
+   "notes": "Bell pulses, tentacles trail; glow pixels on core + tentacles (see _glow sheet). 4-frame swim loop.",
+   "glow_mask_file": "sprites/jellyfish_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "squid",
+   "category": "fish",
+   "file": "sprites/squid.png",
+   "frame_width": 60,
+   "frame_height": 32,
+   "frame_count": 4,
+   "anchor": [
+    30,
+    16
+   ],
+   "facing": "right",
+   "notes": "Arms/head point right, mantle with fins trails left; jet pulse. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "manta_ray",
+   "category": "fish",
+   "file": "sprites/manta_ray.png",
+   "frame_width": 60,
+   "frame_height": 40,
+   "frame_count": 4,
+   "anchor": [
+    30,
+    20
+   ],
+   "facing": "right",
+   "notes": "Top-down 3/4 view, wing span flaps (foreshortens); white shoulder patches. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "lanternfish",
+   "category": "fish",
+   "file": "sprites/lanternfish.png",
+   "frame_width": 30,
+   "frame_height": 18,
+   "frame_count": 4,
+   "anchor": [
+    15,
+    9
+   ],
+   "facing": "right",
+   "notes": "Photophore row pulses through 4 cyan tones (see _glow sheet). 4-frame swim loop.",
+   "glow_mask_file": "sprites/lanternfish_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "anglerfish",
+   "category": "fish",
+   "file": "sprites/anglerfish.png",
+   "frame_width": 56,
+   "frame_height": 46,
+   "frame_count": 4,
+   "anchor": [
+    28,
+    23
+   ],
+   "facing": "right",
+   "notes": "Bobbing glowing lure + dithered halo ring; fanged underbite (see _glow sheet). 4-frame swim loop.",
+   "glow_mask_file": "sprites/anglerfish_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "school_sardine",
+   "category": "fish",
+   "file": "sprites/school_sardine.png",
+   "frame_width": 20,
+   "frame_height": 12,
+   "frame_count": 4,
+   "anchor": [
+    10,
+    6
+   ],
+   "facing": "right",
+   "notes": "Small school fish, silver with blue back. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "school_yellow",
+   "category": "fish",
+   "file": "sprites/school_yellow.png",
+   "frame_width": 18,
+   "frame_height": 12,
+   "frame_count": 4,
+   "anchor": [
+    9,
+    6
+   ],
+   "facing": "right",
+   "notes": "Small school fish, lemon yellow with dark bar. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "school_neon",
+   "category": "fish",
+   "file": "sprites/school_neon.png",
+   "frame_width": 18,
+   "frame_height": 11,
+   "frame_count": 4,
+   "anchor": [
+    9,
+    5
+   ],
+   "facing": "right",
+   "notes": "Small school fish, neon-tetra style. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "school_violet",
+   "category": "fish",
+   "file": "sprites/school_violet.png",
+   "frame_width": 20,
+   "frame_height": 14,
+   "frame_count": 4,
+   "anchor": [
+    10,
+    7
+   ],
+   "facing": "right",
+   "notes": "Small school fish, lavender anthias style with gold fins. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "school_minnow",
+   "category": "fish",
+   "file": "sprites/school_minnow.png",
+   "frame_width": 16,
+   "frame_height": 10,
+   "frame_count": 4,
+   "anchor": [
+    8,
+    5
+   ],
+   "facing": "right",
+   "notes": "Tiniest school fish, slate with silver belly. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "blue_tang",
+   "category": "fish",
+   "file": "sprites/blue_tang.png",
+   "frame_width": 36,
+   "frame_height": 30,
+   "frame_count": 4,
+   "anchor": [
+    18,
+    15
+   ],
+   "facing": "right",
+   "notes": "Royal-blue body, black palette marking, yellow tail + pectoral. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "sea_turtle",
+   "category": "fish",
+   "file": "sprites/sea_turtle.png",
+   "frame_width": 54,
+   "frame_height": 38,
+   "frame_count": 4,
+   "anchor": [
+    27,
+    19
+   ],
+   "facing": "right",
+   "notes": "Green shell with scute seams, front flipper flaps. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "reef_shark",
+   "category": "fish",
+   "file": "sprites/reef_shark.png",
+   "frame_width": 58,
+   "frame_height": 30,
+   "frame_count": 4,
+   "anchor": [
+    29,
+    15
+   ],
+   "facing": "right",
+   "notes": "Grey reef shark; heterocercal tail, white belly, gill slits. 4-frame swim loop.",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "seagull_float",
+   "category": "gull",
+   "file": "sprites/seagull_float.png",
+   "frame_width": 36,
+   "frame_height": 30,
+   "frame_count": 2,
+   "anchor": [
+    18,
+    15
+   ],
+   "facing": "right",
+   "notes": "Sitting on the water, wings folded; 2-frame head bob.",
+   "loop": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "seagull_fly",
+   "category": "gull",
+   "file": "sprites/seagull_fly.png",
+   "frame_width": 36,
+   "frame_height": 30,
+   "frame_count": 3,
+   "anchor": [
+    18,
+    15
+   ],
+   "facing": "right",
+   "notes": "Wing flap: up, mid, down (loop 0,1,2,1 for a smooth flap).",
+   "loop": [
+    0,
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "name": "seagull_dive",
+   "category": "gull",
+   "file": "sprites/seagull_dive.png",
+   "frame_width": 36,
+   "frame_height": 30,
+   "frame_count": 2,
+   "anchor": [
+    18,
+    15
+   ],
+   "facing": "right",
+   "notes": "Nose-down plunge dive, wings swept back; 2 frames of wing/tail jitter.",
+   "loop": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "sloop_small",
+   "category": "ship",
+   "file": "sprites/sloop_small.png",
+   "frame_width": 76,
+   "frame_height": 80,
+   "frame_count": 3,
+   "anchor": [
+    34,
+    76
+   ],
+   "facing": "right",
+   "notes": "Single-mast sloop; gaff mainsail + jib; jolly roger waves (3 frames). Anchor = hull centre at waterline; flag streams right.",
+   "loop": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "sloop_large",
+   "category": "ship",
+   "file": "sprites/sloop_large.png",
+   "frame_width": 125,
+   "frame_height": 132,
+   "frame_count": 3,
+   "anchor": [
+    56,
+    128
+   ],
+   "facing": "right",
+   "notes": "Larger sloop with crow's nest, gunports, jolly roger (3 frames). Anchor = hull centre at waterline; flag streams right.",
+   "loop": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "galleon_small",
+   "category": "ship",
+   "file": "sprites/galleon_small.png",
+   "frame_width": 136,
+   "frame_height": 122,
+   "frame_count": 3,
+   "anchor": [
+    68,
+    111
+   ],
+   "facing": "right",
+   "notes": "Three-masted galleon: square sails, lateen mizzen, stern castle, gunports; 3 flags wave. Anchor = hull centre at waterline; flag streams right.",
+   "glow_mask_file": "sprites/galleon_small_glow.png",
+   "loop": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "galleon_large",
+   "category": "ship",
+   "file": "sprites/galleon_large.png",
+   "frame_width": 223,
+   "frame_height": 199,
+   "frame_count": 3,
+   "anchor": [
+    111,
+    188
+   ],
+   "facing": "right",
+   "notes": "Large galleon, same layout at 1.7x with more detail. Anchor = hull centre at waterline; flag streams right.",
+   "glow_mask_file": "sprites/galleon_large_glow.png",
+   "loop": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "kraken",
+   "category": "monster",
+   "file": "sprites/kraken.png",
+   "frame_width": 444,
+   "frame_height": 404,
+   "frame_count": 4,
+   "anchor": [
+    222,
+    202
+   ],
+   "facing": "front",
+   "notes": "Front view; 8 curling tentacles with sucker rows; twin glowing eyes. Idle: tentacle sway + head bob + blink on frame 4. Eyes (and any glow pixels) also in _glow sheet. Rare spawn; 4-frame idle loop.",
+   "glow_mask_file": "sprites/kraken_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "sea_serpent",
+   "category": "monster",
+   "file": "sprites/sea_serpent.png",
+   "frame_width": 484,
+   "frame_height": 314,
+   "frame_count": 4,
+   "anchor": [
+    242,
+    157
+   ],
+   "facing": "right",
+   "notes": "Side view, travelling body wave with dorsal spines and frill; jaw + glowing eye. Eyes (and any glow pixels) also in _glow sheet. Rare spawn; 4-frame idle loop.",
+   "glow_mask_file": "sprites/sea_serpent_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "leviathan",
+   "category": "monster",
+   "file": "sprites/leviathan.png",
+   "frame_width": 464,
+   "frame_height": 234,
+   "frame_count": 4,
+   "anchor": [
+    232,
+    117
+   ],
+   "facing": "right",
+   "notes": "Whale-like, dorsal spike ridge, throat pleats, toothed jaw; tail fluke sweep + fin flap. Eyes (and any glow pixels) also in _glow sheet. Rare spawn; 4-frame idle loop.",
+   "glow_mask_file": "sprites/leviathan_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "giant_squid",
+   "category": "monster",
+   "file": "sprites/giant_squid.png",
+   "frame_width": 464,
+   "frame_height": 244,
+   "frame_count": 4,
+   "anchor": [
+    232,
+    122
+   ],
+   "facing": "right",
+   "notes": "Mantle trails left, huge eye, 8 arms + 2 club tentacles right; fin ripple + jet pulse. Eyes (and any glow pixels) also in _glow sheet. Rare spawn; 4-frame idle loop.",
+   "glow_mask_file": "sprites/giant_squid_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "megalodon",
+   "category": "monster",
+   "file": "sprites/megalodon.png",
+   "frame_width": 464,
+   "frame_height": 224,
+   "frame_count": 4,
+   "anchor": [
+    232,
+    112
+   ],
+   "facing": "right",
+   "notes": "Giant shark: gill slits, big dorsal, toothy jaw opening, heterocercal tail sweep. Eyes (and any glow pixels) also in _glow sheet. Rare spawn; 4-frame idle loop.",
+   "glow_mask_file": "sprites/megalodon_glow.png",
+   "loop": [
+    0,
+    1,
+    2,
+    3
+   ]
+  }
+ ]
+}
